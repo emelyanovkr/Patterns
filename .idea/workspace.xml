@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d9bce82-0c43-4d70-bb22-679ed4a4a015" name="Changes" comment="Additional variations os singleton added">
-      <change afterPath="$PROJECT_DIR$/src/creational/factory_method/Airplane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creational/factory_method/AirplaneFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creational/factory_method/DeliverClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creational/factory_method/Ship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creational/factory_method/ShipFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creational/factory_method/TransportFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creational/factory_method/Transporting.java" afterDir="false" />
+    <list default="true" id="5d9bce82-0c43-4d70-bb22-679ed4a4a015" name="Changes" comment="Factory pattern implemented">
+      <change afterPath="$PROJECT_DIR$/src/behavioral/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/behavioral/command/DestroyCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/behavioral/command/OperationCentre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/behavioral/command/RepairCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/behavioral/command/TransportCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,26 +58,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ClientMultithread.executor": "Run",
-    "Application.ClientSingleThread.executor": "Run",
-    "Application.Solution.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "settings.editor.splitter.proportion": "0.3058104",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ClientMultithread.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClientSingleThread.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeliverClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.3058104&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,7 +97,13 @@
       <updated>1702561834872</updated>
       <workItem from="1702561835872" duration="1902000" />
       <workItem from="1702735308925" duration="605000" />
-      <workItem from="1702746627930" duration="3228000" />
+      <workItem from="1702746627930" duration="6841000" />
+      <workItem from="1703176584983" duration="607000" />
+      <workItem from="1703316023200" duration="2016000" />
+      <workItem from="1703860539509" duration="333000" />
+      <workItem from="1703872407562" duration="597000" />
+      <workItem from="1704260296740" duration="113000" />
+      <workItem from="1704260420188" duration="3676000" />
     </task>
     <task id="LOCAL-00001" summary="Additional variations os singleton added">
       <option name="closed" value="true" />
@@ -100,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702807011955</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Factory pattern implemented">
+      <option name="closed" value="true" />
+      <created>1702809674690</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702809674690</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Additional variations os singleton added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional variations os singleton added" />
+    <MESSAGE value="Factory pattern implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Factory pattern implemented" />
   </component>
 </project>
