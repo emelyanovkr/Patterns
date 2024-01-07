@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d9bce82-0c43-4d70-bb22-679ed4a4a015" name="Changes" comment="Factory pattern implemented">
-      <change afterPath="$PROJECT_DIR$/src/behavioral/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/command/DestroyCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/command/OperationCentre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/command/RepairCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/behavioral/command/TransportCommand.java" afterDir="false" />
+    <list default="true" id="5d9bce82-0c43-4d70-bb22-679ed4a4a015" name="Changes" comment="Implement Command Pattern">
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/AuctionSiteProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/ProjectManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/ProjectTeamFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/SuperBankSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/banking/BankPM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/banking/BankingTeamFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/banking/JavaDeveloper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/banking/QATester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/website/ManualTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/website/PHPDeveloper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/website/WebsitePM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creational/abstract_factory/website/WebsiteTeamFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,28 +67,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ClientMultithread.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClientSingleThread.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DeliverClient.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.3058104&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ClientMultithread.executor": "Run",
+    "Application.ClientSingleThread.executor": "Run",
+    "Application.DeliverClient.executor": "Run",
+    "Application.Solution.executor": "Run",
+    "Application.SuperBankSystem.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/C++/Source/JavaRepos/TestProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "settings.editor.splitter.proportion": "0.3058104",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -103,7 +114,9 @@
       <workItem from="1703860539509" duration="333000" />
       <workItem from="1703872407562" duration="597000" />
       <workItem from="1704260296740" duration="113000" />
-      <workItem from="1704260420188" duration="3676000" />
+      <workItem from="1704260420188" duration="5492000" />
+      <workItem from="1704446508378" duration="2735000" />
+      <workItem from="1704625878623" duration="1006000" />
     </task>
     <task id="LOCAL-00001" summary="Additional variations os singleton added">
       <option name="closed" value="true" />
@@ -121,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702809674690</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implement Command Pattern">
+      <option name="closed" value="true" />
+      <created>1704292816143</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704292816143</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Additional variations os singleton added" />
     <MESSAGE value="Factory pattern implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Factory pattern implemented" />
+    <MESSAGE value="Implement Command Pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Command Pattern" />
   </component>
 </project>
